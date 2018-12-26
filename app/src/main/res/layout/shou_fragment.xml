@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.bwie.xiaqin.shoppingmu.fragment.ShouFragment">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <ImageView
+
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="24dp"
+               android:src="@mipmap/common_nav_btn_menu_n_hdpi"/>
+           <EditText
+                android:id="@+id/txt_search"
+
+               android:layout_centerHorizontal="true"
+               android:layout_width="@dimen/dp_230"
+               android:layout_height="@dimen/dp_50"
+               android:hint="请输入您想要输入的内容"/>
+
+
+           <ImageView
+               android:id="@+id/sousuo"
+               android:layout_gravity="center"
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+
+               android:layout_centerVertical="true"
+
+               android:layout_marginRight="24dp"
+               android:layout_alignParentRight="true"
+               android:src="@drawable/common_nav_btn_search_n_xxhdpi"
+               />
+       </RelativeLayout>
+
+
+       <cn.bingoogolapple.bgabanner.BGABanner
+           android:id="@+id/bannner"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:layout_margin="10dp"></cn.bingoogolapple.bgabanner.BGABanner>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:background="@drawable/rx"
+               android:gravity="center"
+               android:text="热销新品"
+               android:textColor="#FFFF8058"
+               android:textSize="15sp" />
+
+           <ImageView
+               android:id="@+id/rx_image"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="10dp"
+               android:src="@drawable/common_btn_more_p_hdpi" />
+       </RelativeLayout>
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/recy_rx"
+           android:layout_width="match_parent"
+           android:layout_height="186dp"></android.support.v7.widget.RecyclerView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:background="@drawable/pz"
+                   android:gravity="center"
+                   android:text="魔力时尚"
+                   android:textColor="#FF797BF6"
+                   android:textSize="15sp" />
+
+               <ImageView
+                   android:id="@+id/ml_image"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:src="@drawable/common_btn_more_m_hdpi" />
+           </RelativeLayout>
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recy_ml"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:background="@drawable/pz"
+                   android:gravity="center"
+                   android:text="品质生活"
+                   android:textColor="#FFFF6072"
+                   android:textSize="15sp" />
+
+               <ImageView
+                   android:id="@+id/pz_image"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="10dp"
+                   android:src="@drawable/common_btn_more_n_hdpi" />
+           </RelativeLayout>
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/recy_pz"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="60dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</ScrollView>

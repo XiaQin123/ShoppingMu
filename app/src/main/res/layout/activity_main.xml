@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hjm="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    tools:context="com.bwie.xiaqin.shoppingmu.MainActivity">
+
+    <!--<com.hjm.bottomtabbar.BottomTabBar-->
+        <!--android:id="@+id/bottom_tab_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--hjm:tab_bar_background="#FFFFFF"-->
+        <!--hjm:tab_divider_background="#FF0000"-->
+        <!--hjm:tab_divider_height="5dp"-->
+        <!--hjm:tab_font_size="6sp"-->
+        <!--hjm:tab_img_font_padding="0dp"-->
+        <!--hjm:tab_img_height="50dp"-->
+        <!--hjm:tab_img_width="50dp"-->
+        <!--hjm:tab_isshow_divider="true"-->
+        <!--hjm:tab_padding_bottom="5dp"-->
+        <!--hjm:tab_padding_top="8dp"-->
+        <!--hjm:tab_selected_color="#000000"-->
+        <!--hjm:tab_unselected_color="@color/colorPrimary"-->
+        <!--/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        />
+
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@mipmap/rectangle_6"
+        >
+    <com.yinglan.alphatabs.AlphaTabView
+        style="@style/buju"
+        app:tabIconNormal="@mipmap/common_tab_btn_home_n_hdpi"
+        app:tabIconSelected="@mipmap/common_tab_btn_home_s"
+         />
+    <com.yinglan.alphatabs.AlphaTabView
+        style="@style/buju"
+        app:tabIconNormal="@mipmap/common_tab_btn_circle_n_hdpi"
+        app:tabIconSelected="@mipmap/common_tab_btn_circle_s_hdpi"
+         />
+    <com.yinglan.alphatabs.AlphaTabView
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:tabIconNormal="@mipmap/commom_tab_btn_shopping_cart_n_hdpi"
+        app:textColorNormal="#999999"
+        />
+    <com.yinglan.alphatabs.AlphaTabView
+        style="@style/buju"
+        app:tabIconNormal="@mipmap/common_tab_btn_list_n_hdpi"
+        app:tabIconSelected="@mipmap/common_tab_btn_list_s_hdpi"
+        />
+    <com.yinglan.alphatabs.AlphaTabView
+
+        style="@style/buju"
+        app:tabIconNormal="@mipmap/common_tab_btn_my_n_hdpi"
+        app:tabIconSelected="@mipmap/common_tab_btn_my_s_hdpi"
+        />
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/dian"
+            android:src="@drawable/common_nav_btn_back_n_hdpi"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+        <EditText
+            android:hint="请输入你想要的"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yuanjiao_kuang"
+            android:id="@+id/edit_sou"
+            android:layout_toLeftOf="@id/sou"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/dian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/sou"
+            android:layout_alignParentRight="true"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rx_list"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+</LinearLayout>
